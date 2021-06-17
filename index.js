@@ -190,7 +190,18 @@ class Student extends Lambdasian {
     this.favSubjects = attrKey.favSubjects;
   }
   speak(){
-    
+      
+  }
+  listSubjects(){
+    return `Loving ${this.favSubjects}!`;
+  }
+
+  PRAssignment(student, subject){
+    return `${student.name} has submitted a PR for ${subject}`;
+  }
+
+  springChallenge(student, subject){
+    return `${student} has begun sprint challenge on ${subject}`;
   }
 }
 
