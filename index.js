@@ -87,14 +87,28 @@ class Airplane {
       this.model = model;
     this.milesPerGallon = milesPerGallon;
     this.tank = 0;
-    this.odometer = 0;
+    this.odometer = 50;
     }
     fill(gallons){
-      if(this.tank += 10){
+      if(this.tank >= 10){
       this.tank === gallons;
     }
   }
+
+    drive(){
+      return `I ran out of fuel at ${this.odometer} miles`;
+    }
 };
+
+const carFuel = new Car ({
+  model: "Commodore",
+  milesPerGallon: 20,
+  tank: 0,
+  odometer: 50,
+});
+
+console.log(carFuel.drive());
+
   /*
     TASK 3
       - Write a Lambdasian class.
