@@ -87,10 +87,10 @@ class Airplane {
       this.model = model;
     this.milesPerGallon = milesPerGallon;
     this.tank = 0;
-    this.odometer = 50;
+    this.odometer = 0;
     }
     fill(gallons){
-      if(this.tank >= 10){
+      if(this.tank > 10){
       this.tank === gallons;
     }
   }
@@ -108,6 +108,7 @@ const carFuel = new Car ({
 });
 
 console.log(carFuel.drive());
+console.log(carFuel.fill());
 
   /*
     TASK 3
