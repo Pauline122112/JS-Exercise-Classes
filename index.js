@@ -222,10 +222,10 @@ class ProjectManager extends Instructor{
     this.favInstructor = attrKey.favInstructor;
   }
   standUp(channel){
-    returns `${this.name} announces to ${channel}, @channel standy times!`;
+    return `${this.name} announces to ${channel}, @channel standy times!`;
   }
   debugsCode(student, subject){
-    returns `${this.name} debugs ${student.name}'s code on ${subject}`;
+    return `${this.name} debugs ${student.name}'s code on ${subject}`;
   }
 }
 /*
