@@ -89,8 +89,12 @@ class Airplane {
     this.tank = 0;
     this.odometer = 0;
     }
+    fill(gallons){
+      if(this.tank += 10){
+      this.tank === gallons;
+    }
   }
-  
+};
   /*
     TASK 3
       - Write a Lambdasian class.
